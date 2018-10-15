@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
 import HeaderComponent from '../../components/HeaderComponent/HeaderComponent';
 import Accordion from '../../components/Accordion/Accordion';
+import { H2, Bold } from '../../components/Texts/texts';
 import { Container, Content } from 'native-base';
 
 class AccordionScreen extends Component {
@@ -15,8 +15,8 @@ class AccordionScreen extends Component {
       <Container>
         <HeaderComponent title='Accordion' navigation={this.props.navigation} />
         <Content padder>
-          <Text style={{ fontWeight: 'bold' }} >Accordion enables users to expand and collapse sections of content</Text>
-          <Text>Accordion</Text>
+          <Bold><Bold color='#3057d5'>Accordion </Bold>enables users to expand and collapse sections of content</Bold>
+          <H2>Accordion</H2>
           {[0, 1, 2, 3].map(k =>
             <Accordion key={k} title={`Section ${k + 1} title`} content={randomText} />
           )}
