@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
+import { Header } from 'react-native-elements';
+import PropTypes from 'prop-types';
+import colors from '../../utils/colors';
 
 class HeaderComponent extends Component {
   constructor(props) {
@@ -13,19 +14,17 @@ class HeaderComponent extends Component {
   }
   render() {
     return (
-      <Header>
-        <Left>
-          <Button onPress={this.onPress} transparent>
-            <Icon name='menu' />
-          </Button>
-        </Left>
-        <Body>
-          <Title>{this.props.title}</Title>
-        </Body>
-        <Right></Right>
-      </Header>
+      <Header
+        backgroundColor={colors.ui01}
+        leftComponent={{icon: 'menu', color: '#000', onPress: this.onPress}}
+        centerComponent={{text: this.props.title, style: {color: '#000'}}}
+      />
     );
   }
 }
+
+HeaderComponent.propTypes = {
+  title: PropTypes.string
+};
 
 export default HeaderComponent;

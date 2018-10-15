@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 import colors from '../../utils/colors';
-import { Icon } from 'native-base';
+import { Icon } from 'react-native-elements';
 import PropTypes from 'prop-types';
 
 class Accordion extends Component {
@@ -26,7 +26,7 @@ class Accordion extends Component {
         <TouchableHighlight underlayColor={colors.ui03} onPress={this.toggleContent} style={accordionStyle.expandButton}>
           <View style={{flexDirection: 'row'}}>
             <View style={accordionStyle.iconContainer}>
-              <Icon name={this.state.hidden ? 'arrow-forward' : 'arrow-down'} style={accordionStyle.expandIcon} />
+              <Icon iconStyle={{transform: [{rotate: this.state.hidden ? '0deg' : '90deg'}] }} name='navigate-next' style={accordionStyle.expandIcon} />
             </View>
             <Text style={accordionStyle.title} >{title}</Text>
           </View>

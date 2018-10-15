@@ -1,11 +1,14 @@
 {
   "expo": {
-    "name": "ReactNativeCarbon",
-    "description": "This project is really great.",
+    "name": "React Native Carbon",
+    "description": "This is an in-development project for carbon components that can be used in React Native apps.",
     "slug": "ReactNativeCarbon",
     "privacy": "public",
     "sdkVersion": "30.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +25,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "githubUrl": "https://github.com/dkaushik95/React-Native-Carbon-Components"
   }
 }

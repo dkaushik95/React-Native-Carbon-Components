@@ -6,7 +6,7 @@ import colors from '../../utils/colors';
 class BreadcrumbView extends Component {
   render() {
     return (
-      <ScrollView horizontal style={{ flexDirection: 'row', overflow: 'scroll', paddingTop: 20, paddingBottom: 20 }}>
+      <ScrollView horizontal style={[this.props.style, { flexDirection: 'row', overflow: 'scroll', paddingTop: 20, paddingBottom: 20 }]}>
         {this.props.children}
       </ScrollView>
     );
@@ -14,7 +14,8 @@ class BreadcrumbView extends Component {
 }
 
 BreadcrumbView.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  style: PropTypes.any
 };
 
 class Breadcrumb extends Component {
