@@ -13,7 +13,7 @@ class AccordionScreen extends Component {
     const randomText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
     return (
       <Container>
-        <HeaderComponent title='Overview' navigation={this.props.navigation} />
+        <HeaderComponent title='Accordion' navigation={this.props.navigation} />
         <Content padder>
           <Text style={{ fontWeight: 'bold' }} >Accordion enables users to expand and collapse sections of content</Text>
           <Text>Accordion</Text>
