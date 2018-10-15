@@ -28,7 +28,7 @@ class BreadcrumbScreen extends Component {
           <Text>Breadcrumb</Text>
           <BreadcrumbView>
             {[0, 1, 2, 3, 4].map(k => {
-              return <Breadcrumb key={k} onPress={() => this.onPress(k)} isLeaf={k !== 4}>{`Breadcrumb ${k}`}</Breadcrumb>;
+              return <Breadcrumb key={k} onPress={() => this.onPress(k + 1)} isLeaf={k !== 4}>{`Breadcrumb ${k + 1}`}</Breadcrumb>;
             })}
           </BreadcrumbView>
           <Text>{this.state.onPressResult}</Text>
