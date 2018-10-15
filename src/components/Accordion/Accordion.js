@@ -23,7 +23,7 @@ class Accordion extends Component {
     const {title, content} = this.props;
     return (
       <View style={accordionStyle.outerContainer}>
-        <TouchableHighlight underlayColor={colors.accordionTopBorder} onPress={this.toggleContent} style={accordionStyle.expandButton}>
+        <TouchableHighlight underlayColor={colors.ui03} onPress={this.toggleContent} style={accordionStyle.expandButton}>
           <View style={{flexDirection: 'row'}}>
             <View style={accordionStyle.iconContainer}>
               <Icon name={this.state.hidden ? 'arrow-forward' : 'arrow-down'} style={accordionStyle.expandIcon} />
@@ -42,10 +42,10 @@ class Accordion extends Component {
 const accordionStyle = StyleSheet.create({
   outerContainer: {
     borderTopWidth: 1,
-    borderTopColor: colors.accordionTopBorder
+    borderTopColor: colors.ui03
   },
   expandButton: { paddingTop: 10, paddingBottom: 10 },
-  expandIcon: { textAlign: 'center', fontSize: 20 },
+  expandIcon: { textAlign: 'center', fontSize: 20, color: colors.ui05 },
   iconContainer: { width: 40 },
   title: { color: colors.text01, fontSize: 16 },
   expandedSectionContainer: { marginTop: 16, marginBottom: 24, marginLeft: 40, marginRight: 16 },
