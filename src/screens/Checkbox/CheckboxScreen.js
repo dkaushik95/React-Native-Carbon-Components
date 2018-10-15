@@ -21,7 +21,7 @@ class CheckboxScreen extends Component {
   render() {
     return (
       <Container>
-        <HeaderComponent title='Breadcrumb' navigation={this.props.navigation} />
+        <HeaderComponent title='Checkbox' navigation={this.props.navigation} />
         <Content padder>
           <Bold><Bold color='#3057d5'>Checkbox</Bold> are used when there is a list of options and the user may select multiple options, including all or none.</Bold>
           <H2>Checkbox</H2>
