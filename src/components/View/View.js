@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class PaddedView extends Component {
   render() {
     return (
-      <View style={{padding: 10}}>
+      <View style={[{padding: 10}, this.props.style]}>
         {this.props.children}
       </View>
     );
@@ -13,7 +13,8 @@ class PaddedView extends Component {
 }
 
 PaddedView.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  style: PropTypes.any
 };
 
 export {PaddedView};

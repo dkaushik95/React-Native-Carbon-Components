@@ -25,7 +25,7 @@ class CheckboxScreen extends Component {
         <Bold><Bold color='#3057d5'>Checkbox</Bold> are used when there is a list of options and the user may select multiple options, including all or none.</Bold>
         <H2>Checkbox</H2>
         <Checkbox label="Checkbox" checked={this.state.checked} onPress={this.onPress} />
-        <Checkbox label="Indeterminate checkbox" checked={this.state.checked} onPress={this.onPress} />
+        <Checkbox label="Indeterminate checkbox not implemented yet long string" checked={this.state.checked} onPress={this.onPress} />
         <Checkbox disabled label="Disabled checkbox" checked={this.state.checked} onPress={this.onPress} />
       </PaddedView>
     );

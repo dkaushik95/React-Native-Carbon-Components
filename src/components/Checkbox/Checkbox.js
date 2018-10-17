@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Checkbox = (props) => {
   return (
-    <TouchableOpacity disabled={props.disabled} style={{ backgroundColor: colors.ui01 }} onPress={props.onPress}>
+    <TouchableOpacity disabled={props.disabled} style={{ backgroundColor: colors.ui01}} onPress={props.onPress}>
       {/* Checkbox */}
       <View style={{
         flexDirection: 'row',
@@ -31,8 +31,8 @@ const Checkbox = (props) => {
             }} />
         </View>
         {/* Component */}
-        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <Text>{props.label}</Text>
+        <View style={{ alignSelf: 'center'}}>
+          <Text style={{paddingRight: 60}}>{props.label}</Text>
         </View>
       </View>
     </TouchableOpacity>
