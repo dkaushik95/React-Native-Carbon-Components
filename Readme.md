@@ -27,6 +27,44 @@ TBD
 
 ## Contributing
 
+### Task List
+
+Here are the things to be completed.
+
+* [x] Accordian
+* [x] Breadcrumb
+* [x] Button
+* [x] Checkbox
+* [ ] CodeSnippet
+* [x] ContentSwitcher
+* [ ] DataTable
+* [ ] DatePicker
+* [ ] Dropdown
+* [ ] FileUploader
+* [ ] Form
+* [ ] Link
+* [ ] List
+* [ ] Loading
+* [ ] Modal
+* [ ] Multiselect
+* [ ] Notification
+* [ ] NumberInput
+* [ ] Pagination
+* [ ] ProgressIndicator
+* [ ] OverflowMenu
+* [ ] RadioButton
+* [ ] Search
+* [ ] Select
+* [ ] Slider
+* [ ] StructuredList
+* [ ] Tabs
+* [ ] Tag
+* [ ] TextInput
+* [ ] Tile
+* [ ] Toggle
+* [ ] Tooltip
+* [ ] UIShell
+
 TBD
 
 ## Versioning
