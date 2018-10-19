@@ -4,12 +4,13 @@ import AccordionScreen from './screens/Accordion/AccordionScreen';
 import BreadcrumbScreen from './screens/Breadcrumb/BreadcrumbScreen';
 import CheckboxScreen from './screens/Checkbox/CheckboxScreen';
 import ContentSwitcherScreen from './screens/ContentSwitcher/ContentSwitcherScreen';
+import ButtonScreen from './screens/Button/ButtonScreen';
 
 const ReactNativeCarbon = createDrawerNavigator({
   Home: Home,
   Accordion: AccordionScreen,
   BreadCrumb: BreadcrumbScreen,
-  Button: Home,
+  Button: ButtonScreen,
   Checkbox: CheckboxScreen,
   CodeSnippet: Home,
   ContentSwitcher: ContentSwitcherScreen,
@@ -41,7 +42,7 @@ const ReactNativeCarbon = createDrawerNavigator({
   Tooltip: Home,
   UIShell: Home
 }, {
-  initialRouteName: 'ContentSwitcher'
+  initialRouteName: 'Button'
 });
 
 export default ReactNativeCarbon;

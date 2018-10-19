@@ -22,7 +22,11 @@ const colors = {
   hoverSecondary: '#3d70b2',
   hoverRow: 'rgba(85,150,230, 0.1)',
   headerColor: '#0f212e',
-  headerLight: '#142f42'
+  headerLight: '#142f42',
+  support01: '#e0182d',
+  support02: '#5aa700',
+  support03: '#efc100',
+  support04: '#5aaafa'
 };
 
 export default colors;
