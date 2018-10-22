@@ -35,7 +35,7 @@ Here are the things to be completed.
 * [x] Breadcrumb
 * [x] Button
 * [x] Checkbox
-* [ ] CodeSnippet
+* [x] CodeSnippet
 * [x] ContentSwitcher
 * [ ] DataTable
 * [ ] DatePicker

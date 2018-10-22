@@ -5,6 +5,7 @@ import BreadcrumbScreen from './screens/Breadcrumb/BreadcrumbScreen';
 import CheckboxScreen from './screens/Checkbox/CheckboxScreen';
 import ContentSwitcherScreen from './screens/ContentSwitcher/ContentSwitcherScreen';
 import ButtonScreen from './screens/Button/ButtonScreen';
+import CodeSnippetScreen from './screens/CodeSnippet/CodeSnippetScreen';
 
 const ReactNativeCarbon = createDrawerNavigator({
   Home: Home,
@@ -12,7 +13,7 @@ const ReactNativeCarbon = createDrawerNavigator({
   BreadCrumb: BreadcrumbScreen,
   Button: ButtonScreen,
   Checkbox: CheckboxScreen,
-  CodeSnippet: Home,
+  CodeSnippet: CodeSnippetScreen,
   ContentSwitcher: ContentSwitcherScreen,
   DataTable: Home,
   DatePicker: Home,
@@ -42,7 +43,7 @@ const ReactNativeCarbon = createDrawerNavigator({
   Tooltip: Home,
   UIShell: Home
 }, {
-  initialRouteName: 'Button'
+  initialRouteName: 'CodeSnippet'
 });
 
 export default ReactNativeCarbon;
