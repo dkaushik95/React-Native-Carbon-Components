@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, StyleSheet, Platform, TouchableOpacity, Clipboard, Alert } from 'react-native';
+import { Text, StyleSheet, Platform, TouchableOpacity, Clipboard, Alert, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import colors from '../../utils/colors';
 import {Icon} from 'react-native-elements';
@@ -18,7 +18,9 @@ class Code extends Component {
       <TouchableOpacity disabled={this.props.copy ? true : false} onPress={this.copy}>
         <Text style={[this.props.inline ? CodeStyle.inlineCode : CodeStyle.code]}>{this.props.children}</Text>
         {this.props.copy ? (
-          <Icon name='content-copy' containerStyle={{position: 'absolute', right: 5, top: 5}} iconStyle={{color: colors.brand01}} onPress={this.copy} />
+          <TouchableOpacity onPress={this.copy} style={{ width: 20, height: 20, position: 'absolute', right: 5, top: 5}}>
+            <Image source={require('../../assets/img/copy.png')} style={{ tintColor: colors.brand01, width: 20, height: 20, position: 'absolute', right: 5, top: 5}} />
+          </TouchableOpacity>
         ) : null}
       </TouchableOpacity>
     );
