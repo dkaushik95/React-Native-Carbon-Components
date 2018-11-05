@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Text, StyleSheet, Platform, TouchableOpacity, Clipboard, Alert, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import colors from '../../utils/colors';
-import {Icon} from 'react-native-elements';
 
 class Code extends Component {
   constructor(props) {
